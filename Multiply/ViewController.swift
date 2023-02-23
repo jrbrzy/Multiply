@@ -23,8 +23,9 @@ class ViewController: UIViewController {
     var string3 = ""
     
     
-    
-    
+    var double1 = 0.0
+    var double2 = 0.0
+    var double3 = 0.0
     
  
  
@@ -47,12 +48,26 @@ class ViewController: UIViewController {
         
 
     }
-    @objc func buttonPressed(button: UIButton) { print("button pressed")
+    @objc func buttonPressed(button: UIButton) { print("junior is a qt")
         
-        string1 = Number1.text ?? ""s
+        string1 = Number1.text ?? ""
         
+        string2 = Number2.text ?? ""
         
+       // if var cost = Number1.text
         
+        double1 = Double(string1) ?? 0.0
+        
+        double2 = Double(string2) ?? 0.0 
+        
+        double3 = double1 * double2
+        
+        string3 = String(double3)
+        
+        answer.text = string3
+        
+        //?? is called a optional used to give a default val
+       // string3 = answer.text ?? " "
         
     }
 }
